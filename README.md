@@ -13,7 +13,7 @@ Wraps the core big query google API exposing a simple client interface
     // run a sync query
     query := "select * from publicdata:samples.shakespeare limit 100;"
 
-    rows, headers, err := bqClient.Query("shakespeare", DATASET, query)
+    rows, headers, err := bqClient.Query("shakespeare", PROJECTID, query)
     if err != nil {
       fmt.Println("Error: ", err)
     } else {
